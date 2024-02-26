@@ -1,0 +1,6 @@
+Como sincronizar un proyecto local con un repositorio de giyhub
+1.- crear un repositorio de github, subir los archivos locales al repositorio
+2.- Clonar el repositorio, en la ubicación en local
+3.- sincronizar cambios, git add . - git add [nombre del archivo]
+4.- git commit -m "nuevo commit"
+5.- subir los cambios a github git push origin master
