@@ -15,7 +15,7 @@ html {
 }
 
 /* scroll snap */
-.servicios, .navegacion-principal, .formulario {
+.servicios, .navegacion-principal, .formulario, .perfil, .clientes, .proyectos {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
@@ -285,3 +285,20 @@ a {
 }
 
 /* .campo input[type="text"] con esta forma puede escpecificar */
+
+.proyectos img {
+    max-width: 50%;
+}
+
+.blogcafe, .simulador, .frontendstore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descripcion {
+    grid-column: 2 / 3;
+}
+
+.imagen {
+    grid-column: 1 / 2;
+}
