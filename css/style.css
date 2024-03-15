@@ -290,7 +290,7 @@ a {
     max-width: 50%;
 }
 
-.blogcafe, .simulador, .frontendstore {
+.blogcafe, .simulador, .frontendstore, .calculadora {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
