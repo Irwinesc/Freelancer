@@ -10,22 +10,31 @@
 /* Globales */
 html {
     font-size: 62.5%;
-    box-sizing: border-box; /* hack para box model*/
+    box-sizing: border-box;
+    /* hack para box model*/
     scroll-snap-type: y mandatory;
 }
 
 /* scroll snap */
-.servicios, .navegacion-principal, .formulario, .perfil, .clientes, .proyectos {
+.servicios,
+.navegacion-principal,
+.formulario,
+.perfil,
+.contenido-servicios,
+.proyectos {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
 body {
-    font-size: 16px; /*  1rem = 10px*/
+    font-size: 16px;
+    /*  1rem = 10px*/
     font-family: "Krub", sans-serif;
     background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
 }
@@ -61,9 +70,9 @@ body {
 }
 
 .sombra {
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.54);
     background-color: var(--blanco);
     padding: 2rem;
     border-radius: 1rem;
@@ -83,7 +92,9 @@ h3 {
     font-size: 1.8rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
@@ -127,7 +138,7 @@ h1, h2, h3 {
     .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
-    } 
+    }
 }
 
 .navegacion-principal a {
@@ -176,7 +187,8 @@ a {
     justify-content: center;
 }
 
-.contenido-hero h2, .contenido-hero p {
+.contenido-hero h2,
+.contenido-hero p {
     color: var(--blanco);
 }
 
@@ -187,7 +199,8 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         /* grid-template-rows: 1fr; */
-        grid: 1fr / repeat(3, 1fr); /* 1fr = 33.3% */
+        grid: 1fr / repeat(3, 1fr);
+        /* 1fr = 33.3% */
         column-gap: 5rem;
     }
 }
@@ -220,7 +233,8 @@ a {
 /* Contacto */
 .formulario {
     background-color: var(--gris);
-    width: min(60rem, 100%); /* usa el número más pequeño */
+    width: min(60rem, 100%);
+    /* usa el número más pequeño */
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -272,7 +286,8 @@ a {
     height: 20rem;
 }
 
-.campo input, .campo textarea {
+.campo input,
+.campo textarea {
     width: 100%;
     border: none;
     padding: 1.5rem;
@@ -290,7 +305,15 @@ a {
     max-width: 50%;
 }
 
-.blogcafe, .simulador, .frontendstore, .calculadora, .blog-app, .calculator, .budget, .MCSS, .MJS {
+.blogcafe,
+.simulador,
+.frontendstore,
+.calculadora,
+.blog-app,
+.calculator,
+.budget,
+.MCSS,
+.MJS {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -302,3 +325,42 @@ a {
 .imagen {
     grid-column: 1 / 2;
 }
+
+.mucho-mas {
+    font-weight: 900;
+}
+
+.contenido-servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenido-servicios .servicios {
+    flex: 1;
+    display: flex;
+}
+
+.contenido-servicios-imagen {
+    flex: 1;
+}
+
+.contenido-servicios-imagen img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+@media (max-width: 512px) {
+    .contenido-servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-servicios .servicios {
+        flex: 1;
+    }
+    
+    .contenido-servicios-imagen {
+        flex: 1;
+    }
+  }
