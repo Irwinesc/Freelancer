@@ -12,7 +12,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     /* hack para box model*/
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 /* scroll snap */
@@ -120,9 +120,19 @@ h3 {
     display: flex;
 }
 
-.alinear-derecha {
+.contacto__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .alinear-derecha {
     justify-content: flex-end;
 }
+
+.alinear-izquierda {
+    justify-content: flex-start;
+} */
 
 /* Navegación Principal */
 .nav-bg {
@@ -167,10 +177,12 @@ a {
 
 /* Hero */
 .hero {
-    background-image: url(../img/hero.jpg);
+    /* background-image: url(../img/hero.jpg); */
+    background-image: url(https://www.dibdata.com/wp-content/uploads/2019/06/reponsive-design-blog.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 410px;
+    /* height: 410px; */
+    height: 615px;
     position: relative;
     margin-bottom: 2rem;
 }
@@ -185,6 +197,11 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.contenido-hero .eslogan {
+    color: var(--secundario);
+    font-weight: bold;
 }
 
 .contenido-hero h2,
@@ -301,31 +318,6 @@ a {
 
 /* .campo input[type="text"] con esta forma puede escpecificar */
 
-.proyectos img {
-    max-width: 50%;
-}
-
-.blogcafe,
-.simulador,
-.frontendstore,
-.calculadora,
-.blog-app,
-.calculator,
-.budget,
-.MCSS,
-.MJS {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.descripcion {
-    grid-column: 2 / 3;
-}
-
-.imagen {
-    grid-column: 1 / 2;
-}
-
 .mucho-mas {
     font-weight: 900;
 }
@@ -356,11 +348,12 @@ a {
         flex-direction: column;
         align-items: center;
     }
+
     .contenido-servicios .servicios {
         flex: 1;
     }
-    
+
     .contenido-servicios-imagen {
         flex: 1;
     }
-  }
+}

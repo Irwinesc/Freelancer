@@ -1,0 +1,25 @@
+.proyectos img {
+    max-width: 50%;
+}
+
+.apv,
+.blogcafe,
+.simulador,
+.frontendstore,
+.calculadora,
+.blog-app,
+.calculator,
+.budget,
+.MCSS,
+.MJS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.descripcion {
+    grid-column: 2 / 3;
+}
+
+.imagen {
+    grid-column: 1 / 2;
+}

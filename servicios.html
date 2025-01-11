@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/servicios.css" />
+
 </head>
 
 <body>
@@ -20,7 +22,7 @@
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
             <a href="index.html">Inicio</a>
-            <a href="sobre mi.html">Sobre Nosotros</a>
+            <a href="sobre iTech.html">Sobre Nosotros</a>
             <a href="servicios.html">Servicios</a>
             <a href="proyectos.html">Proyectos</a>
         </nav>
@@ -42,41 +44,66 @@
     </section>
 
     <main class="contenedor sombra">
-        <h2>Ejemplos de servicios que proveemos</h2>
-        <div class="contenido-servicios">
-            <div class="servicios">
-                <ul>
-                    <li>Menú digital, con QR para restaurantes</li>
-                    <li>Tienda en linea</li>
-                    <li>Blog personal</li>
-                    <li>Sofware de gestión empresarial</li>
-                    <li>CRM</li>
-                    <li>Páginas empresariales</li>
-                    <li>Páginas de escuelas</li>
-                    <li>Aplicaciones móviles</li>
-                    <li class="mucho-mas">Y mucho más...</li>
-                </ul>
-                
+        <h2>Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="./img/menu-digital.png" alt="Menú digital">
+                <h3>Menú Digital</h3>
+                <p>Transforma la experiencia de tus clientes con menús digitales interactivos, fáciles de usar y
+                    accesibles desde cualquier dispositivo.</p>
             </div>
-
-            <div class="contenido-servicios-imagen">
-                <img src="./img/Pipeline-view_201028_145631.png" />
+            <div class="servicio-card">
+                <img src="https://www.solbyte.com/blog/wp-content/uploads/tienda-online-1.jpg" alt="Tienda en línea">
+                <h3>Tienda en Línea</h3>
+                <p>Impulsa tus ventas con una tienda en línea diseñada a medida, con funcionalidades avanzadas y un
+                    diseño moderno.</p>
             </div>
-            <div class="contenido-servicios-imagen">
-                <img src="./img/ez_menú_digital_restaurante_hotel.png" />
+            <div class="servicio-card">
+                <img src="./img/crm.png" alt="CRM">
+                <h3>CRM Empresarial</h3>
+                <p>Optimiza la gestión de tus relaciones con clientes con un CRM eficiente, adaptable y fácil de usar.
+                </p>
+            </div>
+            <div class="servicio-card">
+                <img src="https://magenest.com/wp-content/uploads/2023/09/mobile-app.jpg" alt="Aplicaciones móviles">
+                <h3>Aplicaciones Móviles</h3>
+                <p>Diseñamos apps móviles innovadoras que se ajustan a las necesidades específicas de tu negocio y tus
+                    clientes.</p>
             </div>
         </div>
-        <div class="informacion">
-            <p>Para contratar nuestros servicios.</p>
-            <br>
-            <p>Haz clic a continuación:
-                <a class="button" href="index.html#contacto">contacto</a>
-            </p>
+        <div class="cta">
+            <p>¿Quieres más información? ¡Contáctanos hoy mismo!</p>
+            <a class="button" href="index.html#contacto">Contáctanos</a>
         </div>
     </main>
     <footer class="footer">
         <p>&copy; 2024 Todos los derechos reservados. iTech Soluction</p>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, // Habilita el bucle infinito
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1, // Muestra un slide por vez
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2, // Muestra 2 slides en pantallas medianas
+                },
+                1024: {
+                    slidesPerView: 3, // Muestra 3 slides en pantallas grandes
+                },
+            },
+        });
+    </script>
 
 </body>
 
