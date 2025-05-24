@@ -34,9 +34,3 @@
 .images {
     grid-column: 1/ 2;
 }
-
-@media (max-width: 768px) {
-    .proyectos img {
-        width: 50%;
-    }
-}
