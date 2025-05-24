@@ -1,5 +1,11 @@
 .proyectos img {
-    max-width: 50%;
+    /* max-width: 50%; */
+    height: 90px;
+    width: 142px;
+}
+
+.proyectos .images img {
+    width: 42px;
 }
 
 .apv,
@@ -11,7 +17,8 @@
 .calculator,
 .budget,
 .MCSS,
-.MJS {
+.MJS,
+.dogger {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -22,4 +29,14 @@
 
 .imagen {
     grid-column: 1 / 2;
+}
+
+.images {
+    grid-column: 1/ 2;
+}
+
+@media (max-width: 768px) {
+    .proyectos img {
+        width: 50%;
+    }
 }
